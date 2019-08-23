@@ -1,2 +1,2 @@
 *my potfolio
-This is my portfolio fo the StatNG Task
+This is my portfolio for the StartNG Task
