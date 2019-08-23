@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <title>THOR Bank Survey</title>
+    <style>
+         body   {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: whitesmoke;
+            margin-left: 40px;
+            margin-left: 40px;
+            width: 85%;
+        }
+        form   {
+            margin: 0 auto;
+            padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: #f3e5ab;
+        }
+        .head  {
+            margin-top: 30px; 
+            margin-bottom: 40px; 
+        }
+        img   {
+            float: left;
+            border-radius: 10px;
+            height: 100px;
+               
+        }
+    
+         #title   {
+            font-family: 'Parisienne', cursive;
+            font-size: 50px;
+            display: inline;
+            padding-bottom: 5px;
+            
+                }
+
+         #description   {
+            font-size: 15px;
+            margin-top: 20px;
+            background-color: darkslategrey;
+            color: white;
+            padding: 10px 5px;
+            border-radius: 10px;
+            
+    }
+    .info   {
+        border-radius: 5px;
+    }
+
+    legend   {
+        font-weight: 500;
+    }
+         #name   {
+            font-size: 15px;
+         }
+            
+        #lastname   {
+            font-size: 15px;
+    }
+    
+         #email   {
+            font-size: 15px;
+    }
+
+         #number   {
+            font-size: 15px;
+    }
+    #survey-form   {
+        border: 1px solid rgb(10, 98, 128);
+        margin: 10px;
+        border-radius: 5px;
+        padding-left: 20px;
+    }
+    
+    #dropdown  {
+       margin-bottom: 15px;
+    
+    }
+    #option   {
+        padding: 7px 10px;
+        border-radius: 3px;
+       
+    }
+    textarea  {
+        margin-bottom: 10px;
+    }
+    
+    .submit-btn   {
+        background-color: none;
+        text-align: center;
+            
+    }
+    .button:hover   {
+        color: white;
+        background-color: #000;
+    }
+    .submit-btn:active   {
+        top: 2px;
+    }
+    .button   {
+        background-color: green;
+            color: white;
+            border-radius: 7px;
+            padding: 12px 30px;
+            cursor: pointer;
+            position: relative;
+            }
+    
+        </style>
+</head>
+
+<body>
+    <form action="/customer-survey-form" target="_blank" method="post">
+
+    <header class="head">
+        <img src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_98,w_107/v1556635078/thor_cywfkv.jpg" alt="bank-logo"/>
+        <h1 id="title">Thor Bank Customer Satisfaction Survey</h1>
+        
+    
+</header>
+<hr/>
+
+
+    <div>
+        <p id="description"><em>This survey is to enable us get a better undestanding of how to serve you best. Please fill up the form and remember to add any positive contrbutions you might have at the bottom of the form. Thank you - Management, Thor Bank<em></p>
+    </div>
+   
+    <div>
+
+        <fieldset class="info"> 
+            <legend>Personal Information:</legend>  
+        <label for="name-label" id="name">First Name:</label>
+        <input type="text" id="name-label" name="user_name" placeholder="e.g Morgan.J."  required>
+        <br><br>
+        <label for="lastname" id="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="user_names" placeholder="e.g Freeman" required>
+        <br><br>
+        <label for="email-label" id="email">Email:</label>
+        <input type="text" id="email-label" name="email-add" placeholder="Enter valid email" required>
+        <br><br>  
+        <label for="number-label" id="number">Telephone No:</label>
+        <input type="number" id="number-label" name="phone-no" placeholder="Enter valid mobile no"   min="12" max="14" required>
+        </fieldset>
+     </div>
+     <br><br>
+
+        
+    <div id="survey-form">
+        <div>     
+        <p>1. I have easy access to my various accounts online.<p>  
+        <label for="strongly-a">
+            <input id="strongly-a" type="radio" name="agree-disagree" checked>Strongly Agree</label>
+            <label for="agree">
+            <input id="agree" type="radio" name="agree-disagree">Agree</label>
+            <label for="neutral">
+            <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+            <label for="disagree">
+            <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+            <label for="strongly-d">
+            <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label>
+    </div>
+    <div>
+    <p>2. The support services from the bank responds in a timely way.<p>  
+            <label for="strongly-a">
+                <input id="strongly-a" type="radio" name="agree-disagree">Strongly Agree</label>
+                <label for="agree">
+                <input id="agree" type="radio" name="agree-disagree">Agree</label>
+                <label for="neutral">
+                <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+                <label for="disagree">
+                <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+                <label for="strongly-d">
+                <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label>
+                </div>
+     <div>
+         <p>3. I can discuss challenging issues with the customer service team.</p>
+            <label for="strongly-a">
+            <input id="strongly-a" type="radio" name="agree-disagree">Strongly Agree</label>
+            <label for="agree">
+            <input id="agree" type="radio" name="agree-disagree">Agree</label>
+            <label for="neutral">
+            <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+            <label for="disagree">
+            <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+            <label for="strongly-d">
+            <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label>
+    </div> 
+    <div>
+            <p>4. The brank staff have the required skills and knowlwedge about bank products and services.</p> 
+            <label for="strongly-a">
+            <input id="strongly-a" type="radio" name="agree-disagree">Strongly Agree</label>
+            <label for="agree">
+            <input id="agree" type="radio" name="agree-disagree">Agree</label>
+            <label for="neutral">
+            <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+            <label for="disagree">
+            <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+            <label for="strongly-d">
+            <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label>
+    </div>     
+            
+    <div>
+                <p>5. The bank staff are friendly and behave in a courteous manner.</p>
+                <label for="strongly-a">
+            <input id="strongly-a" type="radio" name="agree-disagree">Strongly Agree</label>
+            <label for="agree">
+            <input id="agree" type="radio" name="agree-disagree">Agree</label>
+            <label for="neutral">
+            <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+            <label for="disagree">
+            <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+            <label for="strongly-d">
+            <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label> 
+            </div>      
+
+    <div>
+                <p>6. The bank staff are professional and have a pleasing and presentable appearance.</p>
+                <label for="strongly-a">
+                <input id="strongly-a" type="radio" name="agree-disagree">Strongly Agree</label>
+                <label for="agree">
+                <input id="agree" type="radio" name="agree-disagree">Agree</label>
+                <label for="neutral">
+            <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+                <label for="disagree">
+            <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+                <label for="strongly-d">
+            <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label>
+    </div>
+
+    <div>
+        <p>7. The bank's overall appearance is neat and orderly.</p>
+            <label for="strongly-a">
+            <input id="strongly-a" type="radio" name="agree-disagree" >Strongly Agree</label>
+        <label for="agree">
+            <input id="agree" type="radio" name="agree-disagree">Agree</label>
+            <label for="neutral">
+            <input id="neutral" type="radio" name="agree-disagree">Neutral</label>
+            <label for="disagree">
+            <input id="disagree" type="radio" name="agree-disagree">DisAgree</label>
+            <label for="strongly-d">
+            <input id="strongly-d" type="radio" name="agree-disagree">Strongly DisAgree</label>
+    </div>
+    <div>
+        <p>8. The bank has sufficient and comfortable seating.<p>
+            <label for="strongly-a">
+            <input id="strongly-a" type="checkbox" name="agree-disagree" value="Strongly Agree">Strongly Agree</label>
+            <label for="agree">
+             <input id="agree" type="checkbox" name="agree-disagree" value="Agree">Agree</label>
+            <label for="neutral">
+            <input id="neutral" type="checkbox" name="agree-disagree" value="neutral">Neutral</label>
+            <label for="disagree">
+            <input id="disagree" type="checkbox" name="agree-disagree" value="disagree">DisAgree</label>
+            <label for="strongly-d">
+            <input id="strongly-d" type="checkbox" name="agree-disagree" value="Strongly disagree">Strongly DisAgree</label>
+                        
+    </div> 
+    <div>
+        <p>9. The branches have convenient working hours and convenient branches located to serve you.</p>
+        <label for="strongly-a">
+                <input id="strongly-a" type="checkbox" name="agree-disagree" value="Strongly Agree">Strongly Agree</label>
+                <label for="agree">
+                <input id="agree" type="checkbox" name="agree-disagree" value="Agree">Agree</label>
+                <label for="neutral">
+                <input id="neutral" type="checkbox" name="agree-disagree" value="neutral">Neutral</label>
+                <label for="disagree">
+                <input id="disagree" type="checkbox" name="agree-disagree" value="disagree">DisAgree</label>
+                <label for="strongly-d">
+                <input id="strongly-d" type="checkbox" name="agree-disagree" value="Strongly disagree">Strongly DisAgree</label>
+                </div>  
+ 
+    
+
+    <div id="dropdown">
+            
+            <p>10. Overall I am satisfied with the bank's staff and services.</p>
+                        <select id="option" name="satisfy">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            </select>
+                        </div>
+                    
+                    
+<div>
+        <p>Comments (If any):</p>
+                <textarea name="comment" rows="3"  cols="100" maxlength="170" placeholder="Enter your suggestions here"></textarea>
+                </div> 
+            </div>
+            </form>    
+                <div class="submit-btn">   
+                    <button class="button" type="submit">Submit</button> 
+                </div>
+
+            
+</body>
+</html>
+.

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <title>Music Awards Dinner Order</title>
+    <style>
+         body   {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3e5ab;
+        }
+        img   {
+            float: left;
+            
+        }
+    
+         #title   {
+            font-family: 'Parisienne', cursive;
+            font-size: 50px;
+            display: inline;
+            padding-bottom:5px;
+    }
+         #description   {
+            font-size: 15px;
+            margin-top: 50px;
+            background-color: darkslategrey;
+            color: white;
+    }
+         #name   {
+            font-size: 10px;
+         }
+            
+        #lastname   {
+            font-size: 10px;
+    }
+    
+         #email   {
+            font-size: 10px;
+    }
+
+         #number   {
+            font-size: 10px;
+    }
+    .info   {
+        margin-bottom: 10px;
+    }
+    #dropdown   {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+  .extra   {
+      
+  }
+  .extra1   {
+      float: right;
+
+  }
+         .submit-btn   {
+            background-color: green;
+            color: #000000;
+            border-radius: 30%;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div>
+        <h1 id="title">Music Award Dinner Order</h1>      <img src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_96,w_81/v1556569481/awardlogo_lzeukc.jpg" alt="awards-logo"/>
+        
+    </div>
+</header>
+
+<main>
+    <div>
+        <p id="description"><em>This form is to enable us get a better undestanding of how to serve you best. Please fill up the form and remember to add any allegies you might have. Thank you<em></p>
+    </div>
+   
+    <div>
+<form action="/pre-order-dinner-page" target="_blank" method="post">
+        <fieldset class="info"> 
+            <legend>Personal Information:</legend>  
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="user_name" required>
+        <br><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="user_names" placeholder="surname" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email-add" placeholder="valid email address" required>
+        <br><br>  
+        <label for="number">Telephone No:</label>
+        <input type="text" id="number" name="phone-no" placeholder="valid mobile no"   required>
+        </fieldset>
+     </div>
+     <br><br>
+
+        
+    <hr/>
+    <div id="survey-form">  
+        <h4>Dietry Preference</h4>  
+        <label for="standard">
+            <input id="standard" type="radio" name="dietry" checked>Standard</label>
+        <label for="vegan">
+            <input id="vegan"type="radio" name="dietry">Vegan</label>
+        <label for="vegetarian">
+            <input id="vegetarian" type="radio" name="dietry">Vegetarian</label>
+    </div>
+
+    <div>
+        <h4>Main Course</h4>
+        <label for="lunch"><input id="lunch" type="radio" name="lunch" checked>Eba and Egusi Soup</label>
+        <label for="lunch"><input id="lunch" type="radio" name="lunch">Jellof Rice</label>
+        <label for="lunch"><input id="lunch" type="radio" name="lunch">Fried Rice</label>
+        <label for="lunch"><input id="lunch" type="radio" name="lunch">Beans and Plaintain</label>
+    </div>
+
+    <div>   
+        <h4>Dessert</h4>
+        <label for="dessert"><input id="dessert" type="radio" name="Dessert" checked>Vegetable Salad </label>
+        <label for="dessert"><input id="dessert" type="radio" name="Dessert">Chicken Pepper Soup</label>
+        <label for="dessert"><input id="dessert" type="radio" name="Dessert">Fruit Salad</label>
+        <label for="dessert"><input id="dessert" type="radio" name="Dessert">Chocolate Mousse Cake</label>
+        
+    </div>
+
+        <div id="dropdown">
+            <select name="drinks">
+                <option value="Malt drinks">Malt Drink</option>
+                <option value="Soft drinks">Soft Drink</option>
+                <option value="Alcohol drinks">Alcohol Drink</option>
+                <option value="Fruit drinks">Fruit Drink</option>
+                <option value="Water">Water</option>
+        </div>  
+    
+    <div>
+        <fieldset> 
+             <legend>Some extras:</legend>
+        <ul class="extra">
+            <li>Plaintain</li>
+            <li>Carrots</li>
+            <li>Peas</li>
+            <li>Fried Meat</li>
+            <li>Saghetti</li>
+        </ul>
+        <ul class="extra1">
+            <li>Noodles</li>
+            <li>Fried Chicked</li>
+            <li>Bread</li>
+            <li>Nuts</li>
+            <li>Salt&Pepper</li>
+        </ul>
+        </fieldset>
+    </div>
+</form>
+</main>
+    
+  
+    <div class="submit-btn">   
+        <button type="submit">Submit</button> 
+        </div>
+    </div>
+</body>
+</html>
+

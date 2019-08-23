@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Build</title>
+    <script type="text/javascript" src="quiz.js"></script>
+    <script type="text/javascript" src="pushbar.css"></script>
+    
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+              blur:true,
+              overlay:true,
+            });
+      </script>
+    <style>
+    body  {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+.question{
+    font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+
+    #submit  {
+        padding: 10px 40px;
+        margin: 0 auto;
+        background-color:saddlebrown;
+        color: black;
+        text-align: center;
+        position: relative;
+        box-shadow: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #submit:hover    {
+        background-color: darkkhaki;
+        color: black;
+
+    }
+    #submit:active   {
+       top: 3px;  
+    }
+
+    #previous   {
+     padding:5px 15px;
+      border-radius: 7px;
+
+    }
+
+    #next   {
+     border-radius: 7px;
+     padding:5px 15px;
+ }
+    .slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+p   {
+   font-style: italic;
+
+}
+
+    </style>
+</head>
+<body>
+        <div data-pushbar-id="mypushbar1" class="pushbar from_left">
+                Push bar content 1
+          
+                <button data-pushbar-close>Close</button>
+            </div>
+          
+            <div data-pushbar-id="mypushbar2" class="pushbar from_bottom">
+                Push bar content 2
+          
+                <button data-pushbar-close>Close</button>
+            </div>
+          
+            <div class="pushbar_main_content">
+                Main content of the page
+          
+                <button data-pushbar-target="mypushbar1">
+                Open my pushbar 1
+                </button>
+          
+                <button data-pushbar-target="mypushbar2">
+                Open my pushbar 2
+                </button>
+            </div>
+    <div id="quiz-container"> 
+    <div id="test"></div>
+    </div>
+
+    
+    
+    <div>  
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button> <br>
+    <br> 
+    <button onClick="start()" id="submit">Submit Test</button>
+    </div>
+
+    <div id="results">
+        <p>P.S Click on the submit button to get your results</p>
+    </div>
+    <script type="text/javascript" src="pushbar.js"></script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

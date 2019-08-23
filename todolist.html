@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+    <title>To do list</title>
+</head>
+<style>
+body   {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: maroon;
+    text-align: center;
+    
+} 
+
+
+
+
+h1  {
+    font-family: 'Sue Ellen Francisco',  cursive;
+    font-weight: bolder;
+    color: aliceblue;
+    
+}   
+
+p   {
+    color: whitesmoke;
+    margin-bottom: 11px; 
+}   
+#first   {
+padding-bottom: 30px;
+font-size: 25px;
+color: blueviolet;
+}
+#second  {
+    padding-bottom: 30px;
+    font-size: 22px;
+    color: peachpuff;
+}
+#third  {
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: lightgreen;
+}
+
+
+#userInput   {
+background-color: aliceblue;
+width: 650px;
+text-align: left;
+padding: 7px;
+border-radius: 7px;
+margin-bottom: 20px;
+font-size: 17px;
+}
+
+button   {
+    border: none;
+	padding: 23px 23px 12px 20px;
+	border-radius: 7px;
+	background-color: aliceblue;
+    height: 30px;
+    width: 40px;
+	position: relative;
+    cursor: pointer;
+}
+button:hover   {
+    color: black;
+    background-color:indianred;
+    border: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}   
+button:active   {
+    top: 2px;
+}
+
+#list {
+	text-align: left;
+	margin-top: 10px;
+    display: inline-block;
+}
+
+li {
+	list-style: none;
+	padding: 5px 15px;
+	color: black;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: whitesmoke;
+    width: 550px;
+	
+}
+
+li:hover {
+	background: indianred;
+    color: white;
+}
+
+li > button {
+	font-weight: bold;
+    font-size: 20px;
+    padding: 0px 5px 5px 25px;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	
+}
+
+
+.delete   {
+    display: none;
+}
+
+.done   {
+    background-color: aqua !important;
+    color: black;
+    font-size: 55px;
+}
+
+</style>
+<body>
+   <div id="container">
+    <div id="title">
+        <h1>WORK TO-DO LIST</h1>
+        <p id="first">Enter text into the input field to add items to your list (max 28 characters) </p>
+        <p id="second">Click the item to mark it as complete.</p>
+        <p id="third">Click the "X" to remove the item from your list.</p>
+    </div>
+    <div>
+        <form>
+            <input  id="userInput"  type="text" name="new-item" placeholder="New item ...." required> 
+            <button id="btn"><i class="fas fa-pencil-alt"></i></button>
+            <br>
+            <ul id="list">                
+            </ul>
+        </form>
+    </div>
+    </div>
+    <script type="text/javascript" src="todolist.js"></script>
+    
+</body>
+</html>

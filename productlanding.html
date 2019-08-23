@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kitchenBuild Product landing</title>
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+   
+    <style>
+        body   {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: wheat;
+            
+        }
+        #header   {
+            position: fixed;
+            width:  100%;
+            margin-top: 0px;
+            z-index: 1;
+          }
+
+        .logo1   {
+            color: sienna;
+            font-family:'Sofia', cursive;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: left;
+            margin-left: 0px;
+            background-color: wheat;
+            opacity: 0.7;
+            padding-bottom: 10px; 
+            margin-bottom: 0px;
+        }      
+  
+        #nav-link   {
+            background-color: wheat;
+            opacity: 0.7;
+            float: right;
+            width: 100%;
+            height: 50px;
+            list-style-type: none;
+             
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+            
+        } 
+
+         li   {
+            padding-top: 10px;
+            padding-right: 150px;
+            margin-right: 0px;
+            margin-top: 5px;
+            
+        }
+        li a   {
+            color: #0f262d;
+            font-weight: bold;
+            text-transform: uppercase;
+        
+        }
+        li a:hover   {
+            background-color: lavenderblush;
+            color: sienna;
+        }
+        #header-image   {
+           width: 100%;
+            height: auto;
+            margin-top: 70px;            
+             }
+       
+         .design {
+             position: absolute;
+             font-weight: bold;
+             text-align: center;
+             width: 300px;
+             height: 50px;
+             top: 600px;
+             left: 500px;
+             padding-top: 10px;
+             color: #fff;
+             font-size: 20px;
+              }
+
+        .iphone   {
+            position: absolute;
+            text-align: center;
+            width: 200px;
+            height: 25px;
+            border-radius: 20px;
+            border: 2px solid white;
+            top: 700px;
+            left: 520px;
+            padding: 10px 25px;
+            color: #fff;
+               }
+
+        .copyright   {
+                   float: left;
+                   position: absolute;
+            margin-left: 20px;
+                   color: #000; 
+                   top: 800px;
+                   font-size: 15px;
+            
+               }
+        .new   {
+                   background-color: orangered;
+                   font-size: 15px;
+                   margin-top: 0px;
+                   text-align: center;
+                   padding-top: 7px;
+                   padding-bottom: 7px;
+               }
+               
+        .title   {
+                   text-align: center;
+                   padding: 0px;
+                   margin-top: 5px;
+                   font-family: 'Sofia', cursive;
+                   
+               }
+               .title h3   {
+                   color: orangered;
+                   margin-bottom: 0px;
+               }
+               .title p   {
+                font-family: 'Sofia', cursive;
+                padding: 0px; 
+                margin: 0px;
+                color: sienna;
+               }
+
+                      
+                hr{
+  border-top: 1px solid #00bff9;
+  width: 250px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  margin-bottom: 5px;
+
+                
+                 }  
+            
+                 .video   {
+                   text-align: center;
+                   padding: 0px;  
+                   
+                   margin-bottom: 10px;
+                 } 
+    
+                 
+                .video h3   {
+                     color: orangered;
+                     margin-bottom: 0px;
+                     padding: 0px;
+                     font-family: 'Sofia', cursive;
+                 }
+                 .video p   {
+                     margin-top: 0px;
+                     padding-top: 0px;
+                     color: sienna
+                 }
+
+                 .form hr   {
+                  border-top: 1px solid #00bff9;
+                   width: 300px;
+                   border-bottom: 1px solid rgba(0, 0, 0, 0);
+                     margin-bottom: 15px;
+
+                 }
+        .form   {
+                   color:orangered;
+                   font-family:'Sofia', cursive;
+                   margin-bottom: 5px;
+                   text-align: center;
+                   padding: 0px;
+                   }
+
+               .form h3   {
+                 padding: 0px; 
+                 margin-bottom: 0px; 
+               }
+               
+               .form p   {
+                 padding: 0px; 
+                 margin: 0px; 
+                 color: sienna;
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+               }
+
+
+               input[type="email"] {
+                   max-width: 275px;
+                   width: 100%;
+                   padding: 5px;
+                    border: 2px solid #59adeb;
+                    margin-bottom: 5px;
+                }
+
+                input[type="submit"] {
+                      width: 40px;
+                      height: 34px;
+                       margin: 15px 0;
+                       border: 2px solid #59adeb;
+                      background-color: #ffffff08;
+                      color: #1160f5;
+                      margin-bottom: 5px;
+                      cursor: pointer;
+                }
+
+        .button   {
+                    position: relative;
+                     background-color: orangered;
+                     color: white;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    margin: 20px;
+               }
+        .button:hover  {
+                    background-color: whitesmoke;
+                    color: black
+               }
+        .button:active   {
+                top: 2px;
+               }
+
+        .images    {
+            text-align: center;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            position: relative;
+            
+        }
+        .images1    {
+            margin-top: 10px;
+            padding-right: 20px;
+            border-radius: 10px;
+            height: 30px;
+            width: 50px;
+        }
+        .images2    {
+            margin-top: 10px;
+             padding-right: 20px;
+            border-radius: 10px;
+            height: 30px;
+            width: 50px;
+        }
+        .images3    {
+            margin-top: 10px;
+            padding-right: 20px;
+            border-radius: 10px;
+            height: 30px;
+            width: 50px;
+        }
+        .images4    {
+            margin-top: 10px;
+            padding-right: 20px;
+            border-radius: 10px;
+            height: 30px;
+            width: 50px;
+        }
+    footer   {
+background-color: orangered;
+text-align: center;
+color: aliceblue;
+padding-top: 1px;
+padding-bottom: 1px;
+
+
+    }
+    </style>
+</head>
+<body>
+      
+    <header id="header">
+        
+       
+        <nav>
+            <ul id="nav-link">
+                <li class="logo1" style="float:left">kitchenBuild</li>
+                <li><a href="#" target="_blank">Home</a><Home</li>
+                <li><a href="#" target="_blank">Designs</a><Designs</li>
+                <li><a href="#" target="_blank">Gallery</a><Gallery</li>
+                <li><a href="#" target="_blank">Contact</a><Contact</li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>    
+            <div>
+        <img  id="header-image" 
+        src="https://res.cloudinary.com/partypack/image/upload/c_fit,w_275/v1556725295/kitchendesign_ler4gv.jpg" alt="kitchen design"/> 
+        <p class="design">kitchenBuild helps you visulize and design your kitchen</p>       
+        <p class="iphone">Get kitchenBuild for iphone</p>
+        <p class="copyright">image copyright</p>
+        </div>
+    
+    
+        <div class="new">   
+            <p>*New: Read our announcement blog for more information about kitchenBuild</p>
+        </div>
+    
+
+    
+        <div class="title">
+            <h3 >A better way to a beautiful kitchen</h3>
+            <p>Have you had your kitchen commissioned, only to find out </p><p>what's on paper dosen't quite meet you expectations.</p> <p>Thats why we made kitchenBuild...... you can see, </p><p> the end result even befoe a single wood is placed. </p><p>Voila your kitchen designed by you exactly the way you want it.</p>
+            
+        </div>
+        
+        <div class="video">
+        
+             <hr> 
+             <br>
+             <br> 
+             <h3>Designs</h3>
+            <p>A better way to a view the future </p>
+            <video width="320" height="240" controls>    
+            <source src="https://www.youtube.com/watch?v=FrvAL-L__aY" type="video/mp4">
+            </video>
+        </div>
+        <br>
+    
+    
+        <div class="form"> 
+            <hr>
+            <h3>Information</h3>            
+                <p>Design your kitchen!</p>  
+        <form  action="/product-landing-page">
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>      
+                   
+         
+            <a href="https://www.freecodecamp.com/email-submit"><button class="button"    type="submit">Submit</button></a>
+        </form>
+        </div>
+
+        <div class="images">      
+        <img   class="images1" src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_70,w_103/v1556740715/googleplay_affaey.png" alt="google.logo">
+        <img class="images2" src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_72,w_101/v1556877121/twittelogo_ot2iyd.png" alt="twitter.logo"/>
+        <img class="images3" src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_69,w_99/v1556877176/facebooklogo_eacpi4.png" alt="facebook.logo"/>
+        <img class="images4" src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_87,w_106/v1556877131/Instagram_fcth1i.jpg" alt="instagram.logo"/>
+        </div>
+        
+    </main>
+
+    <footer>
+                <p>Product Landing Page for Freecodecamp | by Ego Ugwu</p>
+    </footer>
+    
+    
+</body>
+</html4

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Indie+Flower|Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Grid Class</title>
+    <style>
+        *  {
+           box-sizing: border-box;   
+        }
+        body  {
+            margin: 0px 50px 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("https://res.cloudinary.com/partypack/image/upload/v1566412222/ikoi_bidge_u1oozw.jpg");
+            background-size: cover;
+        }
+        .container  {
+            display: grid;            
+            font-size: 15px;
+            grid-template-columns: 1fr, 2fr;
+            grid-template-rows: 1fr, 2fr, 1fr;
+            grid-template-areas: 
+            "top  top"
+            "left  right"
+            "left bottom";
+            border: 2px solid #87b5ff;
+                       
+        }
+       
+        .header {
+            grid-area: top;
+            font-family: 'Indie Flower', cursive;
+            background-color:rgb(231, 235, 240);
+            font-size: 22px;
+            text-align: center;
+            margin: 10px;
+            
+            
+        }
+        .advert  {
+            grid-area: left;
+            background-color:rgb(231, 235, 240);
+            padding: 10px;
+            opacity: .2;
+        }
+        .content  {
+            grid-area: right;
+            padding: 10px;
+           
+        }
+        .footer  {
+            grid-area: bottom;
+            background-color: rgb(231, 235, 240);
+            position: relative;
+            color: black; 
+            padding: 10px;        
+        }
+
+        p  {
+            font-weight: bold;
+    
+        }
+
+        .copy  {        
+            float: right;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+            .container {
+                 grid-template-areas:
+                  "left top" 
+                  "left right" 
+                  "left bottom"; 
+                  }
+                   }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NEW LAGOS</h1>
+        </div>
+        <aside class="advert"><strong>Advert Space Advert Space Advert Space</strong></aside>
+        <div class="content">
+            <p>Lagos is a metropolitan city with lots of interesting sights to behold. There are a lot of beaches, theatre, gallery, jazz clubs and nature parks to go to in Lagos . There are also modern shopping centers , Go Kart Arene, Art Galleries and fun turfs for kids. The beaches include Kuramo beach, Oniru private beach, Elegushi beach, Atican beach, the list is almost endless. However, it’s still a great place to hang out with friends and even host parties. </p>
+            <img src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_260,w_460/v1566419735/Bogobiri-house-768x512_ut8zqu.jpg" alt="fun spot in lagos"/>
+            <p>1. Bogobiri House</p>
+            <img src="https://res.cloudinary.com/partypack/image/upload/c_scale,h_260,w_460/v1566412166/goKat_zvqnjm.jpg" alt=" Go-Kart games"/>
+            <p>2. A Go-Kart Arena</p>
+            
+            <p>The Freedom Park was constructed to preserve the history and cultural heritage of Nigerians as seen in its strategically placed monumental figures. It’s definitely one of the spots to visit in Lagos. The Tera-Kulture gallery showcases the works of established and contemporary upcoming Nigerians as well as international artists. while The Palms Shopping Mall  has a cinema and a diverse number of shopping stores which visitors usually shop from.</p> 
+            <img src="https://res.cloudinary.com/partypack/image/upload/v1566412236/mall-lekki_ujyogg.jpg" alt="Palms shopping mall"/>
+            <p>3. Palms Shopping Mall</p>
+            
+            <p> For your number one shopping experience and window shopping, visit The Palms. Tafawa Balewa Square is a 14.5-hectare (35.8-acre) ceremonial ground located at Onikan, Lagos and is popularly referred to as ‘TBS’ is one of the top spots to visit in Lagos. This square is particularly significant as this was where Nigeria’s independence celebration took place. It has served as host locations for big events in Lagos including gospel show called the experience, Lagos carnival, Lagos international trade fair, and more.</p>
+            <p>Unarguably the most economically active and socially diverse state in Nigeria, Lagos state is strategically positioned as the major convergence points for all other parts of the country and also the main entry point to the rest of the world. This has lead to the creation of a variety of destinations and spots meant for leisure, relaxation, exploration or just sheer amusement.</p>
+        </div>
+        <div class="footer">
+            <p><em>culled from <a>www.hotels.ng.com</a></em></p>
+            <p class="copy">&copy ego ugwu</p>
+        </div>
+    
+
+    </div>
+    
+</body>
+</html>

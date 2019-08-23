@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Map - Lagos</title>
+    <style>
+        body {            
+            text-align: center;
+        }
+        #map  {
+            height: 500px;
+            width: 90%;
+            background-color: grey;
+            margin: 40px 80px;
+        }     
+    </style>
+    <script> 
+            function initMap()  {        
+  var lagos = {lat: -4.5244, lng: 3.3792};
+  
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: lagos});
+  // The marker
+  var marker = new google.maps.Marker({position: lagos, map: map});     
+            }   
+        </script>
+</head>
+<body>
+    <h3>My Google Map Marked Lagos</h3>
+    <div id="map"></div>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDSCjBxytWYKBaN5VAgii_UOpCC8a_7rc&callback=initMap"></script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
