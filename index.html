@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lora|Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Ego Ugwu -Contact form/Resume </title>
     
     
@@ -64,10 +65,10 @@
         font-family: 'Josefin Sans', sans-serif;
     }
     hr  {
-        border-top: 1px dashed red;
+        border-top: 1px dashed tomato;
     }
     
-    
+    /* Contact form CSS */
     .info-details {
         padding-top: 44px;
         padding-bottom: 75px;
@@ -75,52 +76,52 @@
         text-align: center;
         background-color: lavender;
         padding-bottom: 75px;
-        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        border-radius: 4px;
         
-
-    } 
+} 
     .info-details h1{
+        font-family: 'Nanum Gothic', sans-serif;
+        
+         } 
 
-    font-family: 'Josefin Sans', sans-serif;
-} 
-
-.info-details hr{
-width: 25%;
-} 
-    #name, #email, #title  {
+    .info-details hr{
+        width: 35%;
+        margin-bottom: 30px;
+        } 
+    #name, #email, #title, #message {
         padding: 10px;
-        width: 80%;
+        width: 70%;
         margin-top: 20px;
-
-    }
+        }
 
     #message  {
-    
-
+        padding-bottom: 120px;
+        width: 70%;
+        margin-top: 20px;
     }
-
-
-    #button {
+      #button {
   background-color: tomato;
   border: none;
   color: whitesmoke;
-  padding: 10px 20px;
+  padding: 10px ;
   text-align: center;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
-  border-radius: 7px; 
-  position: relative;
-  float: right  
+  width: 73%;
+
 }
 
- #button:hover  {
+        #button:hover  {
             background-color: white;
-            color: lightcyan;
-        }
-#button:active  {
+            color: tomato;
+            }
+         #button:active  {
             top: 2px;
-        }
+            }
     </style>
 </head>
 <body>
@@ -199,29 +200,27 @@ width: 25%;
                 </div>
     <div class="info-details">
         
-        <h3>CONTACT</h3>
-        <p>Let's work together</p>
+        <h1>CONTACT US</h1>
+        <h3>Let's work together</p>
         <hr>
-        <form action = "message.html" onsubmit= "return validateForm()" method="post">                     
+        <form action= "message.html" onsubmit= "return validateForm()" method="post">                     
                 <input type="text" id="name" name="user_name" placeholder="NAME"  required>
                 <br>  
                 
                 <input type="email" id="email" name="email-add" placeholder="EMAIL" required>
                 <br>   
 
-                <input type="text" id="title" name="title-text" placeholder="TITLE" >
+                <input type="text" id="title" name="title-text" placeholder="TITLE" required>
                 <br><br>                    
                 
-                <textarea id="message"  name="comment" rows="11"  cols="105" maxlength="170" placeholder="TYPE YOUR MESSAGE HERE" required></textarea>
-
-                <input    id="button" type="submit" value="SEND">
-                                   
-            </form>  
+                <input type="text"  id="message"  name="comment"  placeholder="TYPE YOUR MESSAGE HERE" required>        
+                 
+                <input id="button" type="submit" value="SEND">
+        </form>  
+        
              
-        </div> 
-        
-
-        
+    </div> 
+            
        
            
     <script type="text/javascript">
@@ -232,26 +231,26 @@ width: 25%;
     let msgField = document.getElementById('message').value;
 
     if(fullName== "" || emailAdd == "" || titleField == "" || msgField == "")  {
-        alert ( "All fields required");
+        alert ("All fields required");
         fullName.focus();
         return false;
     } else if(fullName.length < 4) {
-        alert (  "Name must have at least 4 characters");
+        alert ("Name must have at least 4 characters");
         emailAdd.focus();
         return false;
     } else if (emailAdd.indexOf("@", 0) < 0 || emailAdd.indexOf(".", 0) < 0 )  {
-        alert (  "Incorrect email address");
+        alert ("Please enter a valid  email address");
         titleField.focus();
         return false;
-    }else if (msgField.length <= 20) {
-        alert (  "Please enter at least 20 chaactes");
+    }else if (msgField.length < 20) {
+        alert ("Your message must contain at least 20 characters");
         msgField.focus();
         return false;
         
     }else {
         return true;
     }
-}
+};
 </script>
 </body>
 </html>
