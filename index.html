@@ -33,10 +33,11 @@
     }
     h1  {
         font-size: 55px;
-        margin-bottom: 0px;       
+        margin-bottom: 0px;
+        color: tomato;       
     }
     h3  {
-        color: rgb(42, 104, 124);
+        
         font-family: 'Josefin Sans', sans-serif;        
     }
     h4  {
@@ -91,16 +92,16 @@
         width: 35%;
         margin-bottom: 30px;
         } 
-    #name, #email, #title, #message {
+    #name, #email, #title {
         padding: 10px;
-        width: 70%;
+        width: 68%;
         margin-top: 20px;
         }
 
     #message  {
         padding-bottom: 120px;
         width: 70%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
       #button {
   background-color: tomato;
@@ -109,7 +110,7 @@
   padding: 10px ;
   text-align: center;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
   width: 73%;
 
@@ -200,7 +201,7 @@
                 </div>
     <div class="info-details">
         
-        <h1>CONTACT US</h1>
+        <h1>QUICK CONTACT</h1>
         <h3>Let's work together</p>
         <hr>
         <form action= "message.html" onsubmit= "return validateForm()" method="post">                     
@@ -213,7 +214,8 @@
                 <input type="text" id="title" name="title-text" placeholder="TITLE" required>
                 <br><br>                    
                 
-                <input type="text"  id="message"  name="comment"  placeholder="TYPE YOUR MESSAGE HERE" required>        
+                <input type="text"  id="message"  name="comment"  placeholder="TYPE YOUR MESSAGE HERE...." required> 
+                <br><br>       
                  
                 <input id="button" type="submit" value="SEND">
         </form>  
@@ -230,23 +232,25 @@
     let titleField = document.getElementById('title').value;
     let msgField = document.getElementById('message').value;
 
-    if(fullName== "" || emailAdd == "" || titleField == "" || msgField == "")  {
-        alert ("All fields required");
-        fullName.focus();
+    if(fullName == "" || emailAdd == "" ||  msgField == "")  {
+        alert ("All fields required");    
+        return false;
+    }  else if(titleField == "") { 
+        alert ("Please provide a value");
+        titleField.focus;
         return false;
     } else if(fullName.length < 4) {
         alert ("Name must have at least 4 characters");
-        emailAdd.focus();
+        fullName.focus();
         return false;
     } else if (emailAdd.indexOf("@", 0) < 0 || emailAdd.indexOf(".", 0) < 0 )  {
         alert ("Please enter a valid  email address");
-        titleField.focus();
+        emailAdd.focus();
         return false;
     }else if (msgField.length < 20) {
         alert ("Your message must contain at least 20 characters");
         msgField.focus();
-        return false;
-        
+        return false;        
     }else {
         return true;
     }
